@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f076" />
+      <stop offset="100%" stop-color="#00a3ff" />
+    </linearGradient>
+    <linearGradient id="antennaGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00a3ff" />
+      <stop offset="100%" stop-color="#00f076" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Antenna -->
+  <line x1="50" y1="20" x2="50" y2="8" stroke="url(#antennaGrad)" stroke-width="4" stroke-linecap="round" />
+  <circle cx="50" cy="7" r="5" fill="#00f076" filter="url(#glow)" />
+
+  <!-- Robot Head Exterior -->
+  <rect x="18" y="22" width="64" height="56" rx="16" fill="#0f172a" stroke="url(#bgGrad)" stroke-width="3" />
+
+  <!-- Ears / Bolts -->
+  <rect x="10" y="38" width="8" height="24" rx="4" fill="#00a3ff" />
+  <rect x="82" y="38" width="8" height="24" rx="4" fill="#00a3ff" />
+
+  <!-- Visor Display Screen -->
+  <rect x="26" y="32" width="48" height="26" rx="10" fill="#050b14" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Robot Eyes (Glowing Green WhatsApp/AI Orbs) -->
+  <circle cx="39" cy="45" r="5.5" fill="#00f076" filter="url(#glow)" />
+  <circle cx="61" cy="45" r="5.5" fill="#00f076" filter="url(#glow)" />
+
+  <!-- Eye glints -->
+  <circle cx="41" cy="43" r="1.8" fill="#ffffff" />
+  <circle cx="63" cy="43" r="1.8" fill="#ffffff" />
+
+  <!-- Smiling Digital Mouth -->
+  <path d="M 38 67 Q 50 74 62 67" fill="none" stroke="#00f076" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Subtle Circuit Lines -->
+  <circle cx="32" cy="68" r="1.5" fill="#00a3ff" />
+  <circle cx="68" cy="68" r="1.5" fill="#00a3ff" />
+</svg>

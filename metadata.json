@@ -1,0 +1,7 @@
+{
+  "name": "JOHNNY TEC AI Reply",
+  "description": "WhatsApp AI Auto-Reply bot with Gemini intelligence, learned contact profiles, and WhatsApp-style PWA control panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
