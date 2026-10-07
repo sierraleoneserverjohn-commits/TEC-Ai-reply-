@@ -140,7 +140,7 @@ async def list_contacts(filter: str = Query("all", pattern="^(all|active|archive
         elif filter == "active":
             query = query.eq("archived", False)
 
-        res = query.order("last_inbound_at", desc=True, nulls_first=False).execute()
+        res = query.order("last_inbound_at", desc=True, nullsfirst=False).execute()
         contacts = res.data or []
 
         enriched = []
